@@ -1,10 +1,11 @@
 const express = require('express');
+const { readFile } = require("fs");
 const app = express();
 
-// Middleware
 app.use(express.json());
 
-// Routes
-app.get('/', (req, res) => res.send('Hello World!'));
+app.get('/', async (req, res) => {
+    res.send( await readFile('./home.html', 'utf8') );
+});
 
 module.exports = app;
