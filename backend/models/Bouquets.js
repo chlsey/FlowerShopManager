@@ -34,11 +34,11 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
         },
         category: {
-            type: Sequelize.JSON,
+            type: Sequelize.STRING,
             allowNull: false,
         },
         materials: {
-            type: Sequelize.JSON,
+            type: Sequelize.STRING,
             allowNull: false,
         },
         instructions: {

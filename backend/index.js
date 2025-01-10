@@ -6,7 +6,10 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
-const db = require("./models");
+const db = require("./models/");
+
+const bouquetRouter = require("./routes/Bouquets");
+app.use("/bouquets", bouquetRouter);
 
 db.sequelize.sync().then(() => {
     app.listen(3002, () => {
