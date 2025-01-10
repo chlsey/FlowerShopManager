@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffe6f0;
+    margin: 0;
+    padding: 0;
+}
+
+.bouquet {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 2px solid #ffccd5;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.bouquet:hover {
+    transform: scale(1.05);
+}
+
+.bouquet-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff6699; /* Bright pink text */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.bouquet-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bouquet-photo {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ffccd5;
+    object-fit: cover;
+}
+
+.bouquet-description {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    flex: 1;
+}
+
+.bouquet-description p {
+    margin: 5px 0;
+}
+
+.bouquet-footer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff6699;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #ffccd5;
+    padding-top: 10px;
+}
